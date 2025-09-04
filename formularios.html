@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-,width, initial-scale=1.0">
+        <tittle>document</tittle>
+        </head>
+    <body>
+        <form action="">
+
+            <label for="nombre"> NOMBRE </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+            <label for="correo"> CORREO </label>
+            <input type="email" id="correo" name="correo" placeholder="EJEMPLO@CORREO.COM">
+
+            <label for="edad"> EDAD</label>
+            <input type="number" id="edad" min="0" max="120" step="1">
+
+            <label for="tel"> TELEFONO </label>
+            <input type="tel" id="tel" name="tel" placeholder="+57 300 000 0000">
+
+            <label for="fecha"> FECHA DE NACIMIENTO</label>
+            <input type="fecha" id="nacimiento" name="nacimiento">
+
+            <label for="hora"> HORA DE NACIMIENTO</label> 
+            <input type="hora" id="hora" name="hora">
+            
+            <p>GENERO:</p>
+            <input type="radio" id="gen_m" name="genero" value="M">
+            <label for="gen_m">MASCULINO</label>
+            <input type="radio" id="gen_f" name="genero" value="F">
+            <label for="gen_f">FEMENINO</label>
+
+            <P>HOBBIES:</P>
+            <input type="checkbox" id="h_lectura" name="hobby" value="lectura">
+            <label for="h_lectura">LECTURA</label>
+            <input type="checkbox" id="h_deporte" name="hobby" value="deporte">
+            <label for="h_deporte">DEPORTE</label>
+            <input type="checkbox" id="h_musica" name="hobby" value="musica">
+            <label for="h_musica">musica</label>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="co" selected>Colombia</option>
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+            </select>
+
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="mensaje" rows="4" cols="30" placeholder="Escribe tu mensaje"></textarea>
+
+            <label for="cv">Hoja de vida (PDF):</label>
+            <input type="file" id="cv" name="cv" accept="application/pdf">
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">  <!-- opcional, reinicia el formulario -->
+
+        <form action="/procesar" method="post">
+            <input type="text" id="usuario" name="usuario">  <!-- 'usuario' será la clave -->
+            <input type="submit" value="Enviar">
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo">
+
+            <form action="/procesar" method="post">
+                <label for="usuario">Nombre:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Tu nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                
+                <p>Género:</p>
+                <input type="radio" id="gen_m" name="genero" value="M"><label for="gen_m">Masculino</label>
+                <input type="radio" id="gen_f" name="genero" value="F"><label for="gen_f">Femenino</label>
+                
+                <p>Hobbies:</p>
+                <input type="checkbox" id="h_lectura" name="hobby" value="lectura"><label for="h_lectura">Lectura</label>
+                <input type="checkbox" id="h_deporte" name="hobby" value="deporte"><label for="h_deporte">Deporte</label>
+                
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="co" selected>Colombia</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                </select>
+                
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="mensaje" rows="4" cols="30" placeholder="Escribe tu mensaje"></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+
+</select>
+  
+        </form>
+    </body>
+</html>
+ 
+
+
+
+
