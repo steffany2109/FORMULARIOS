@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario - OwnStyle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="/registrar" method="post">
+    <h2>Registro de Usuario - OwnStyle</h2>
+
+    <!-- Datos básicos -->
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+
+    <label for="nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="nacimiento" name="nacimiento">
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option value="">Seleccione</option>
+      <option value="M">Masculino</option>
+      <option value="F">Femenino</option>
+      <option value="O">Otro</option>
+      <option value="N">Prefiero no decirlo</option>
+    </select>
+
+    <!-- Datos de acceso -->
+    <label for="usuario">Nombre de usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+
+    <!-- Ubicación -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais" required>
+      <option value="co" selected>Colombia</option>
+      <option value="mx">México</option>
+      <option value="ar">Argentina</option>
+      <option value="cl">Chile</option>
+      <option value="pe">Perú</option>
+    </select>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion">
+
+    <!-- Perfil -->
+    <label for="tipo">Tipo de usuario:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="consumidor">Consumidor</option>
+      <option value="productor">Productor</option>
+    </select>
+
+    <label for="intereses">Intereses / Estilos:</label>
+    <input type="text" id="intereses" name="intereses" placeholder="Ej: vintage, artesanal, urbano">
+
+    <label for="descripcion">Sobre ti / tu marca:</label>
+    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos sobre ti o tu proyecto"></textarea>
+
+    <!-- Consentimientos -->
+    <label>
+      <input type="checkbox" required> Acepto los <a href="#">términos y condiciones</a>
+    </label>
+    <label>
+      <input type="checkbox" required> Autorizo el uso de mis datos según la política de privacidad
+    </label>
+
+    <div class="botones">
+      <input type="submit" value="Registrarme">
+      <input type="reset" value="Limpiar">
+    </div>
+  </form>
+
+</body>
+</html>
+
+
+
+
+    </form>
+</body>
+</html>
